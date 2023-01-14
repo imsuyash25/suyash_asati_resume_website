@@ -5,17 +5,28 @@ import ResponsiveAppBar from './navbar.js';
 import './styles.css';
 import myimg from './myimage.jpg';
 import Navbar from './navbar.js';
-import  ImgMediaCard from './Card.js';
 import Ipod from './ipod.jpg';
 import Bright from './bright.png';
 import Bgimg from './bgimg.jpg';
+import './navbar.css';
+
 function App() {
   return (
     <div classNameName="App">
-    <Navbar/>
-    
+    <div className="Body">
+        <details className='details'>
+        <summary className='summary'></summary>
+        <nav className="menu">
+            <a href="#Home">Home</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Skills">Skills</a>
+            <a href="#ContactMe">Contact</a>
+            <a href="#AboutMe">About</a>
+        </nav>
+        </details>
+    </div>
 <body>
-    <main className="main-content">
+    <main id="Home" className="main-content">
       <section className='top-section'>
       <img className= "background" src={Bgimg} alt="like"/>
       </section>
@@ -54,7 +65,7 @@ function App() {
                     <p className="skill-title">English</p>
                     </ul>
                 </div>
-                <div className="skills-section">
+                <div id="Skills" className="skills-section">
                     <h3 className="main-title">Skills</h3>
                     <ul>
                        
@@ -108,7 +119,7 @@ function App() {
                         </li>
                     </ul>
                 </div>
-                <div className="contact-info">
+                <div id= "ContactMe" className="contact-info">
                 <h3 className="main-title">Contact Me</h3>
                     <ul>
                         <li>
@@ -144,7 +155,7 @@ function App() {
         </section>
         <section className="right-section">
             <div className="right-main-content">
-                <section className="about sect">
+                <section id="AboutMe" className="about sect">
                     <h2 className="right-title">About Me</h2>
                     <p className="para">
                     I am energetic and passionate college student working towards B.Tech in Computer Science at Shri Ram Institute of 
@@ -247,7 +258,7 @@ acquired from my coursework and with my hard work
                     </div>
                 </section>
                 
-                <section className="awards sect">
+                <section id="Projects" className="awards sect">
                     <h2 className="right-title">Projects</h2>
                     <div className="timeline">
                         <div className="left-tl-content">
